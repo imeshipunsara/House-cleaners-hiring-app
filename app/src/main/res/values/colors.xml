@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="meterial01">#01756A</color>
+    <color name="lavender">#8692f7</color>
+    <color name="lavender_dark">#6A77C8FF</color>
+
+
+</resources>

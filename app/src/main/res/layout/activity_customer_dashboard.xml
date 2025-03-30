@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerDashboard">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="402dp"
+        android:layout_height="132dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:scaleType="matrix"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dashtop" />
+
+    <TextView
+        android:id="@+id/txvCustomer_WelcomeMassage"
+        android:layout_width="341dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif"
+        android:text=" "
+        android:textAlignment="textEnd"
+        android:textColor="#10248E"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.771"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+    <ImageButton
+        android:id="@+id/imbAddHouse"
+        android:layout_width="121dp"
+        android:layout_height="106dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/baseline_add_box_24" />
+
+    <Button
+        android:id="@+id/btnViewList"
+        android:layout_width="374dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Click to View Your all Job Posts"
+        android:textColor="#FBFBFB"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        android:backgroundTint="@color/lavender"/>
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="265dp"
+        android:layout_height="277dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnViewList"
+        app:srcCompat="@drawable/cl1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

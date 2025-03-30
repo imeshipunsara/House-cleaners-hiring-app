@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HouseActivity">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="421dp"
+        android:layout_height="131dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dashtop2" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="356dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="36dp"
+        android:text="Fill in house details and find a cleaner."
+        android:textAlignment="center"
+        android:textColor="#071568"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="414dp"
+        android:layout_height="594dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txvID"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <EditText
+                android:id="@+id/edtJ_title"
+                android:layout_width="360dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/costom_edittext3"
+                android:ems="10"
+                android:hint="Job Title"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/edtJ_des"
+                android:layout_width="360dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/costom_edittext3"
+                android:ems="10"
+                android:hint="Description"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/edtJno_rooms"
+                android:layout_width="360dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/costom_edittext3"
+                android:ems="10"
+                android:hint="Number of Rooms"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textSize="24sp" />
+
+
+            <EditText
+                android:id="@+id/edtJno_bath"
+                android:layout_width="360dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/costom_edittext3"
+                android:ems="10"
+                android:hint="Number of Bathrooms"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textSize="24sp"/>
+
+
+
+            <EditText
+                android:id="@+id/edtJ_floor"
+                android:layout_width="360dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/costom_edittext3"
+                android:ems="10"
+                android:hint="Flooring types"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textSize="24sp" />
+
+
+            <EditText
+                android:id="@+id/edtJno_floors"
+                android:layout_width="360dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/costom_edittext3"
+                android:ems="10"
+                android:hint="Number of Bathrooms"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/edtJ_owner"
+                android:layout_width="360dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/costom_edittext3"
+                android:ems="10"
+                android:hint="Owner Name"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/edtJ_contact"
+                android:layout_width="360dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/costom_edittext3"
+                android:ems="10"
+                android:hint="Contact Number"
+                android:padding="8dp"
+                android:inputType="text"
+                android:textSize="24sp"/>
+
+            <EditText
+                android:id="@+id/edtJ_address"
+                android:layout_width="360dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/costom_edittext3"
+                android:ems="10"
+                android:inputType="textPostalAddress"
+                android:hint="Home Address"
+                android:padding="8dp"
+                android:textSize="24sp"/>
+
+
+            <EditText
+                android:id="@+id/edtJ_price"
+                android:layout_width="360dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/costom_edittext3"
+                android:ems="10"
+                android:hint="Price"
+                android:inputType="numberDecimal"
+                android:padding="8dp"
+                android:textSize="24sp"/>
+
+            <LinearLayout
+                android:layout_width="360dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/costom_edittext3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="125dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Add house photo"
+                    android:textSize="24sp" />
+
+                <ImageButton
+                    android:id="@+id/ibtn_House"
+                    android:layout_width="108dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="70dp"
+                    android:backgroundTint="#FDFDFD"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/baseline_add_photo_alternate_24" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imvHouse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="275dp"
+                    android:layout_marginLeft="100dp"
+                    app:srcCompat="@drawable/logo22" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="409dp"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2">
+
+        <Button
+            android:id="@+id/btnH_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/lavender"
+            android:text="ADD" />
+
+        <Button
+            android:id="@+id/btnH_Update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/lavender"
+            android:text="UPDATE" />
+
+        <Button
+            android:id="@+id/btnH_Delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/lavender"
+            android:text="DELETE" />
+
+        <Button
+            android:id="@+id/btnH_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/lavender"
+            android:text="VIEW "
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

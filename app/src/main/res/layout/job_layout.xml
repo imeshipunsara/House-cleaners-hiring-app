@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="428dp">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="411dp"
+            android:layout_height="412dp"
+            android:layout_marginTop="8dp"
+            android:foregroundGravity="bottom"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/listbackground" />
+
+        <ImageView
+            android:id="@+id/imvVhomephoto"
+            android:layout_width="175dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="36dp"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo22" />
+
+        <TextView
+            android:id="@+id/txvVContactno"
+            android:layout_width="158dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/imvVhomephoto"
+            app:layout_constraintTop_toBottomOf="@+id/txvVownerName" />
+
+        <TextView
+            android:id="@+id/txvVownerName"
+            android:layout_width="158dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="52dp"
+            android:text="TextView"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/imvVhomephoto"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="408dp"
+            android:layout_height="2dp"
+            android:background="#A49F9F"
+            android:text="TextView"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="418dp" />
+
+        <ImageButton
+            android:id="@+id/ibtnVedit"
+            android:layout_width="68dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#00FFFFFF"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toEndOf="@+id/txvViewDescription"
+            app:layout_constraintTop_toBottomOf="@+id/txvViewPrice"
+            app:srcCompat="@drawable/baseline_edit_24" />
+
+        <TextView
+            android:id="@+id/txvViewHomeAddress"
+            android:layout_width="156dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:text="TextView"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/imvVhomephoto"
+            app:layout_constraintTop_toBottomOf="@+id/txvVContactno" />
+
+        <TextView
+            android:id="@+id/txvViewPrice"
+            android:layout_width="155dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:text="TextView"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/imvVhomephoto"
+            app:layout_constraintTop_toBottomOf="@+id/txvViewHomeAddress" />
+
+        <TextView
+            android:id="@+id/txvViewDescription"
+            android:layout_width="220dp"
+            android:layout_height="78dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imvVhomephoto" />
+
+        <Button
+            android:id="@+id/btnCleanerAccept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="272dp"
+            android:layout_marginTop="88dp"
+            android:text="Accept"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txvViewPrice" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
